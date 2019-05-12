@@ -1,0 +1,64 @@
+$form-color:                 #c1c1c1;
+$form-background:            #fff;
+
+$form-focus-color:            #333;
+$form-focus-background:       #f5f5f5;
+
+$form-padding:                0 20px;
+$form-margin:                 20px;
+
+
+$form-height:                 44px;
+$form-small-height:           36px;
+$form-large-height:           56px;
+
+.form {
+  max-width: 570px;
+  &-group {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+  }
+    input {
+      max-width: 270px;
+      width: 100%;
+      font-family: "Open Sans";
+      font-weight: 400;
+      line-height: 24px;
+      height: $form-height;
+      padding: $form-padding;
+      border-radius: 5px;
+      background: $form-background;
+      color: $form-color;
+      &:focus {
+        outline: none;
+        background: $form-focus-background;
+        color: $form-focus-color;
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 300px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 24px;
+    padding: $form-padding;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      background: $form-focus-background;
+      color: $form-focus-color;
+    }
+  }
+
+  .card-name {
+    margin-right: $form-margin;
+  }
+
+  .card-message {
+    padding-bottom: 30px;
+  }

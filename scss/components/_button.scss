@@ -1,0 +1,115 @@
+$button-font-size:                               17px;
+$button-small-font-size:                         14px;
+$button-large-font-size:                         24px;
+
+$button-line-height:                             14px;
+
+$button-font-family:  'Open Sans Semibold', arial;
+
+$button-padding:                                 12px 50px;
+$button-small-padding:                           8px 13px;
+$button-large-padding:                           22px 41px;
+
+$button-primary-background:                      #49cbcd;
+$button-primary-color:                           #ffffff;
+$button-primary-hover-background:                #788492;
+$button-primary-hover-color:                     #ffffff;
+$button-primary-active-background:               darken($button-primary-background, 10%);
+$button-primary-active-color:                    $global-inverse-color ;
+
+$button-secondary-background:                    #788492;
+$button-secondary-color:                         #ffffff;
+$button-secondary-hover-background:              #49cbcd;
+$button-secondary-hover-color:                   #ffffff;
+$button-secondary-active-background:             darken($button-secondary-background, 10%);
+$button-secondary-active-color:                  $global-inverse-color;
+
+$button-main-background:                         transparent;
+$button-main-color:                              #ffffff;
+$button-main-border:                             3px solid #ffffff;
+$button-main-hover-border:                       3px solid #49cbcd;
+$button-main-hover-color:                        #49cbcd;
+
+
+.button {
+  margin: 0;
+  border: none;
+  font-family: $button-font-family;
+  text-transform: none;
+  display: inline-block;
+  padding: $button-padding;
+  font-size: $button-font-size;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-primary {
+  background-color: $button-primary-background;
+  color: $button-primary-color;
+  line-height: $button-line-height;
+  &:hover,
+  &:focus {
+    background-color: $button-primary-hover-background;
+    color: $button-primary-hover-color;
+  }
+  
+  /* OnClick + Active */
+  &:active,
+  &.active {
+    background-color: $button-primary-active-background;
+    color: $button-primary-active-color;
+  }
+
+}
+
+.button-secondary {
+  background-color: $button-secondary-background;
+  color: $button-secondary-color;
+  line-height: $button-line-height;
+  &:hover,
+  &:focus {
+    background-color: $button-secondary-hover-background;
+    color: $button-secondary-hover-color;
+  }
+  
+  /* OnClick + Active */
+  &:active,
+  &.active {
+    background-color: $button-secondary-active-background;
+    color: $button-secondary-active-color;
+  }
+}
+
+.button-small {
+  padding: $button-small-padding;
+  font-size: $button-small-font-size;
+  border-radius: 4px;
+}
+
+.button-large {
+  padding: $button-large-padding;
+  font-size: $button-large-font-size;
+  border-radius: 5px;
+}
+
+.button-main {
+  background-color: $button-main-background;
+  color: $button-main-color;
+  border: $button-main-border;
+  letter-spacing: 0.52px;
+  
+    &:hover,
+  &:focus {
+    border: $button-main-hover-border;
+    color: $button-main-hover-color;
+}
+}
